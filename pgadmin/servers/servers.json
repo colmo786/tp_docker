@@ -1,0 +1,14 @@
+{
+    "Servers": {
+      "1": {
+        "Name": "energy",
+        "Group": "Servers",
+        "Host": "local_pgdb",
+        "Port": 5432,
+        "MaintenanceDB": "postgres",
+        "Username": "user",
+        "PassFile": "/pgpass",
+        "SSLMode": "prefer"
+      }
+    }
+  }

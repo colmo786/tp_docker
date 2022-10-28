@@ -1,0 +1,62 @@
+[2022-10-28T13:44:39.743+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-28T11:05:00+00:00 [queued]>
+[2022-10-28T13:44:39.861+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-28T11:05:00+00:00 [queued]>
+[2022-10-28T13:44:39.862+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T13:44:39.862+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-10-28T13:44:39.862+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T13:44:40.051+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): get_hourly_demand> on 2022-10-28 11:05:00+00:00
+[2022-10-28T13:44:40.069+0000] {standard_task_runner.py:55} INFO - Started process 4672 to run task
+[2022-10-28T13:44:40.103+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'get_hourly_demand_v2', 'get_hourly_demand', 'scheduled__2022-10-28T11:05:00+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/hourly_demand_dag.py', '--cfg-path', '/tmp/tmpjr4ij303']
+[2022-10-28T13:44:40.133+0000] {standard_task_runner.py:83} INFO - Job 63: Subtask get_hourly_demand
+[2022-10-28T13:44:41.081+0000] {task_command.py:376} INFO - Running <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-28T11:05:00+00:00 [running]> on host 96776771a69f
+[2022-10-28T13:44:42.502+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=get_hourly_demand_v2
+AIRFLOW_CTX_TASK_ID=get_hourly_demand
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-28T11:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-28T11:05:00+00:00
+[2022-10-28T13:44:42.735+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-28T13:44:42.774+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-28T13:44:43.054+0000] {logging_mixin.py:120} INFO - INFO api_request_to_pandas: API request executed Ok. Number of records returned: 128
+[2022-10-28T13:44:43.513+0000] {logging_mixin.py:120} INFO - INFO api_request_to_pandas: API request executed Ok. Number of records returned: 19
+[2022-10-28T13:44:43.524+0000] {logging_mixin.py:120} INFO - INFO is_holiday. URL request for 2022-10-28 Ok.
+[2022-10-28T13:44:43.594+0000] {logging_mixin.py:120} INFO - INFO get_hourly_demand - 10 records were upserted. Table cammesa_db.hourly_demand.
+[2022-10-28T13:44:43.599+0000] {logging_mixin.py:120} INFO - INFO get_hourly_demand execution:  2022-10-28T11:05:00+00:00
+[2022-10-28T13:44:43.600+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-28T13:44:43.762+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_hourly_demand_v2, task_id=get_hourly_demand, execution_date=20221028T110500, start_date=20221028T134439, end_date=20221028T134443
+[2022-10-28T13:44:44.012+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-28T13:44:44.250+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-10-28T18:02:42.518+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-28T11:05:00+00:00 [queued]>
+[2022-10-28T18:02:42.556+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-28T11:05:00+00:00 [queued]>
+[2022-10-28T18:02:42.556+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T18:02:42.557+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-10-28T18:02:42.557+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T18:02:42.603+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): get_hourly_demand> on 2022-10-28 11:05:00+00:00
+[2022-10-28T18:02:42.615+0000] {standard_task_runner.py:55} INFO - Started process 1101 to run task
+[2022-10-28T18:02:42.657+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'get_hourly_demand_v2', 'get_hourly_demand', 'scheduled__2022-10-28T11:05:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/hourly_demand_dag.py', '--cfg-path', '/tmp/tmpp8i7ldxl']
+[2022-10-28T18:02:42.661+0000] {standard_task_runner.py:83} INFO - Job 60: Subtask get_hourly_demand
+[2022-10-28T18:02:42.882+0000] {task_command.py:376} INFO - Running <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-28T11:05:00+00:00 [running]> on host f011703e6eb5
+[2022-10-28T18:02:43.378+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=get_hourly_demand_v2
+AIRFLOW_CTX_TASK_ID=get_hourly_demand
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-28T11:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-28T11:05:00+00:00
+[2022-10-28T18:02:43.429+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-28T18:02:43.505+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-28T18:02:43.659+0000] {logging_mixin.py:120} INFO - INFO api_request_to_pandas: API request executed Ok. Number of records returned: 180
+[2022-10-28T18:02:44.061+0000] {logging_mixin.py:120} INFO - INFO api_request_to_pandas: API request executed Ok. Number of records returned: 19
+[2022-10-28T18:02:44.066+0000] {logging_mixin.py:120} INFO - INFO is_holiday. URL request for 2022-10-28 Ok.
+[2022-10-28T18:02:44.128+0000] {logging_mixin.py:120} INFO - INFO get_hourly_demand - 14 records were upserted. Table cammesa_db.hourly_demand.
+[2022-10-28T18:02:44.129+0000] {logging_mixin.py:120} INFO - INFO get_hourly_demand execution:  2022-10-28T11:05:00+00:00
+[2022-10-28T18:02:44.129+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-28T18:02:44.163+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_hourly_demand_v2, task_id=get_hourly_demand, execution_date=20221028T110500, start_date=20221028T180242, end_date=20221028T180244
+[2022-10-28T18:02:44.343+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-28T18:02:44.435+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

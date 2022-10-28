@@ -1,0 +1,146 @@
+[2022-10-28T22:27:37.065+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-26T12:05:00+00:00 [queued]>
+[2022-10-28T22:27:37.108+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-26T12:05:00+00:00 [queued]>
+[2022-10-28T22:27:37.122+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T22:27:37.123+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-10-28T22:27:37.123+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T22:27:38.015+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): calculate_hourly_demand_forecast> on 2022-10-26 12:05:00+00:00
+[2022-10-28T22:27:38.046+0000] {standard_task_runner.py:55} INFO - Started process 739 to run task
+[2022-10-28T22:27:38.056+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ENG_hourly_process_v1', 'calculate_hourly_demand_forecast', 'scheduled__2022-10-26T12:05:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/ENG_hourly_process_dag.py', '--cfg-path', '/tmp/tmp54l4ocv6']
+[2022-10-28T22:27:38.069+0000] {standard_task_runner.py:83} INFO - Job 6: Subtask calculate_hourly_demand_forecast
+[2022-10-28T22:27:38.305+0000] {task_command.py:376} INFO - Running <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-26T12:05:00+00:00 [running]> on host 74ce152bc4b9
+[2022-10-28T22:27:38.726+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=ENG_hourly_process_v1
+AIRFLOW_CTX_TASK_ID=calculate_hourly_demand_forecast
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-26T12:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-26T12:05:00+00:00
+[2022-10-28T22:27:38.791+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-28T22:27:38.791+0000] {logging_mixin.py:120} INFO - INFO calculate_hourly_demand_forecast execution init:  2022-10-26T12:05:00+00:00
+[2022-10-28T22:27:38.792+0000] {logging_mixin.py:120} INFO - WORKDIR: /opt/***
+[2022-10-28T22:27:38.871+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-28T22:27:38.905+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 1
+[2022-10-28T22:27:38.922+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 48
+[2022-10-28T22:28:58.286+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - ETA: 0s
+[2022-10-28T22:28:58.287+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - 70s 70s/step
+[2022-10-28T22:28:58.408+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast: forecast calculated for next 24 hours. Since: 2022-10-27 00:00
+[2022-10-28T22:29:37.320+0000] {logging_mixin.py:120} INFO - ERROR _calculate_hourly_demand_forecast calling submodule: ERROR api_request_to_pandas: Error requesting API: http://nolaborables.com.ar/api/v2/feriados/2022
+Traceback (most recent call last):   File "/usr/local/lib/python3.7/urllib/request.py", line 1350, in do_open     encode_chunked=req.has_header('Transfer-encoding'))   File "/usr/local/lib/python3.7/http/client.py", line 1281, in request     self._send_request(method, url, body, headers, encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request     self.endheaders(body, encode_chunked=encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders     self._send_output(message_body, encode_chunked=encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output     self.send(msg)   File "/usr/local/lib/python3.7/http/client.py", line 976, in send     self.connect()   File "/usr/local/lib/python3.7/http/client.py", line 948, in connect     (self.host,self.port), self.timeout, self.source_address)   File "/usr/local/lib/python3.7/socket.py", line 707, in create_connection     for res in getaddrinfo(host, port, 0, SOCK_STREAM):   File "/usr/local/lib/python3.7/socket.py", line 752, in getaddrinfo     for res in _socket.getaddrinfo(host, port, family, type, proto, flags): socket.gaierror: [Errno -3] Temporary failure in name resolution  During handling of the above exception, another exception occurred:  Traceback (most recent call last):   File "/opt/***/dags/energy.py", line 111, in _url_request_to_pandas     response = urllib.request.urlopen(_request)   File "/usr/local/lib/python3.7/urllib/request.py", line 222, in urlopen     return opener.open(url, data, timeout)   File "/usr/local/lib/python3.7/urllib/request.py", line 525, in open     response = self._open(req, data)   File "/usr/local/lib/python3.7/urllib/request.py", line 543, in _open     '_open', req)   File "/usr/local/lib/python3.7/urllib/request.py", line 503, in _call_chain     result = func(*args)   File "/usr/local/lib/python3.7/urllib/request.py", line 1378, in http_open     return self.do_open(http.client.HTTPConnection, req)   File "/usr/local/lib/python3.7/urllib/request.py", line 1352, in do_open     raise URLError(err) urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+[2022-10-28T22:29:37.493+0000] {logging_mixin.py:120} INFO - ERROR calculate_hourly_demand_forecast. ERROR api_request_to_pandas: Error requesting API: http://nolaborables.com.ar/api/v2/feriados/2022
+Traceback (most recent call last):   File "/usr/local/lib/python3.7/urllib/request.py", line 1350, in do_open     encode_chunked=req.has_header('Transfer-encoding'))   File "/usr/local/lib/python3.7/http/client.py", line 1281, in request     self._send_request(method, url, body, headers, encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request     self.endheaders(body, encode_chunked=encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders     self._send_output(message_body, encode_chunked=encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output     self.send(msg)   File "/usr/local/lib/python3.7/http/client.py", line 976, in send     self.connect()   File "/usr/local/lib/python3.7/http/client.py", line 948, in connect     (self.host,self.port), self.timeout, self.source_address)   File "/usr/local/lib/python3.7/socket.py", line 707, in create_connection     for res in getaddrinfo(host, port, 0, SOCK_STREAM):   File "/usr/local/lib/python3.7/socket.py", line 752, in getaddrinfo     for res in _socket.getaddrinfo(host, port, family, type, proto, flags): socket.gaierror: [Errno -3] Temporary failure in name resolution  During handling of the above exception, another exception occurred:  Traceback (most recent call last):   File "/opt/***/dags/energy.py", line 111, in _url_request_to_pandas     response = urllib.request.urlopen(_request)   File "/usr/local/lib/python3.7/urllib/request.py", line 222, in urlopen     return opener.open(url, data, timeout)   File "/usr/local/lib/python3.7/urllib/request.py", line 525, in open     response = self._open(req, data)   File "/usr/local/lib/python3.7/urllib/request.py", line 543, in _open     '_open', req)   File "/usr/local/lib/python3.7/urllib/request.py", line 503, in _call_chain     result = func(*args)   File "/usr/local/lib/python3.7/urllib/request.py", line 1378, in http_open     return self.do_open(http.client.HTTPConnection, req)   File "/usr/local/lib/python3.7/urllib/request.py", line 1352, in do_open     raise URLError(err) urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+[2022-10-28T22:29:37.510+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ENG_hourly_process_dag.py", line 66, in calculate_hourly_demand_forecast
+    raise ValueError()
+ValueError
+[2022-10-28T22:29:49.108+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 6 for task calculate_hourly_demand_forecast ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 739)
+[2022-10-28T22:29:49.110+0000] {base_job.py:232} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 228, in heartbeat
+    self.heartbeat_callback(session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/local_task_job.py", line 182, in heartbeat_callback
+    self.task_instance.refresh_from_db()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 75, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 873, in refresh_from_db
+    ti = qry.one_or_none()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2836, in one_or_none
+    return self._iter().one_or_none()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2897, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3197, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3276, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3247, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2101, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-10-28T22:29:48.810+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-10-28T22:29:48.916+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

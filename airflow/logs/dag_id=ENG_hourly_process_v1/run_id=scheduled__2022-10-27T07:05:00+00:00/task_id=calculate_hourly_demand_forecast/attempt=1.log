@@ -1,0 +1,131 @@
+[2022-10-28T19:26:21.431+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T07:05:00+00:00 [queued]>
+[2022-10-28T19:26:21.468+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T07:05:00+00:00 [queued]>
+[2022-10-28T19:26:21.468+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T19:26:21.469+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-10-28T19:26:21.469+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T19:26:21.697+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): calculate_hourly_demand_forecast> on 2022-10-27 07:05:00+00:00
+[2022-10-28T19:26:21.727+0000] {standard_task_runner.py:55} INFO - Started process 7361 to run task
+[2022-10-28T19:26:21.784+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ENG_hourly_process_v1', 'calculate_hourly_demand_forecast', 'scheduled__2022-10-27T07:05:00+00:00', '--job-id', '139', '--raw', '--subdir', 'DAGS_FOLDER/ENG_hourly_process_dag.py', '--cfg-path', '/tmp/tmppqupuhvm']
+[2022-10-28T19:26:21.805+0000] {standard_task_runner.py:83} INFO - Job 139: Subtask calculate_hourly_demand_forecast
+[2022-10-28T19:26:24.077+0000] {task_command.py:376} INFO - Running <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T07:05:00+00:00 [running]> on host f011703e6eb5
+[2022-10-28T19:26:25.255+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=ENG_hourly_process_v1
+AIRFLOW_CTX_TASK_ID=calculate_hourly_demand_forecast
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-27T07:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-27T07:05:00+00:00
+[2022-10-28T19:26:25.284+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-28T19:26:25.297+0000] {logging_mixin.py:120} INFO - INFO calculate_hourly_demand_forecast execution init:  2022-10-27T07:05:00+00:00
+[2022-10-28T19:26:25.297+0000] {logging_mixin.py:120} INFO - WORKDIR: /opt/***
+[2022-10-28T19:26:25.387+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-28T19:26:25.442+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 1
+[2022-10-28T19:26:25.496+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 49
+[2022-10-28T19:27:16.257+0000] {base_job.py:232} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 204, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2961, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3039, in _merge
+    options=options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2775, in get
+    identity_token=identity_token,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2878, in _get_impl
+    load_options=load_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3197, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3276, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3247, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2101, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-10-28T19:27:33.183+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - ETA: 0s
+[2022-10-28T19:27:33.184+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - 11s 11s/step
+[2022-10-28T19:27:33.235+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast: forecast calculated for next 24 hours. Since: 2022-10-28 16:00
+[2022-10-28T19:27:42.414+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast - 24 records were upserted. Table cammesa_db.hourly_demand_forecast.
+[2022-10-28T19:27:42.422+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-28T19:27:42.456+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=ENG_hourly_process_v1, task_id=calculate_hourly_demand_forecast, execution_date=20221027T070500, start_date=20221028T192621, end_date=20221028T192742
+[2022-10-28T19:27:42.918+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-28T19:27:43.001+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

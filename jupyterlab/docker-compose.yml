@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+    jupyter:
+        image: docker-jupyter-scipy-extensible
+        build: .
+        restart: 'no'
+        volumes:
+            - ./notebooks:/home/jovyan/notebooks
+        ports:
+            - "8888:8888"

@@ -1,0 +1,38 @@
+[2022-10-26T23:07:16.101+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-26T22:05:00+00:00 [queued]>
+[2022-10-26T23:07:16.143+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-26T22:05:00+00:00 [queued]>
+[2022-10-26T23:07:16.143+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-26T23:07:16.144+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-26T23:07:16.144+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-26T23:07:16.187+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): get_hourly_demand> on 2022-10-26 22:05:00+00:00
+[2022-10-26T23:07:16.193+0000] {standard_task_runner.py:55} INFO - Started process 2208 to run task
+[2022-10-26T23:07:16.209+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'get_hourly_demand_v2', 'get_hourly_demand', 'scheduled__2022-10-26T22:05:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/hourly_demand_dag.py', '--cfg-path', '/tmp/tmp5vokbder']
+[2022-10-26T23:07:16.212+0000] {standard_task_runner.py:83} INFO - Job 27: Subtask get_hourly_demand
+[2022-10-26T23:07:16.378+0000] {task_command.py:376} INFO - Running <TaskInstance: get_hourly_demand_v2.get_hourly_demand scheduled__2022-10-26T22:05:00+00:00 [running]> on host b19062265769
+[2022-10-26T23:07:30.939+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=get_hourly_demand_v2
+AIRFLOW_CTX_TASK_ID=get_hourly_demand
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-26T22:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-26T22:05:00+00:00
+[2022-10-26T23:07:45.893+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-26T23:07:56.640+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-26T23:08:17.672+0000] {logging_mixin.py:120} INFO - ERROR api_request_to_pandas: Error requesting API: https://api.cammesa.com/demanda-svc/demanda/ObtieneDemandaYTemperaturaRegionByFecha?fecha=2022-10-26&id_region=1002
+Traceback (most recent call last):   File "/usr/local/lib/python3.7/urllib/request.py", line 1350, in do_open     encode_chunked=req.has_header('Transfer-encoding'))   File "/usr/local/lib/python3.7/http/client.py", line 1281, in request     self._send_request(method, url, body, headers, encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request     self.endheaders(body, encode_chunked=encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders     self._send_output(message_body, encode_chunked=encode_chunked)   File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output     self.send(msg)   File "/usr/local/lib/python3.7/http/client.py", line 976, in send     self.connect()   File "/usr/local/lib/python3.7/http/client.py", line 1443, in connect     super().connect()   File "/usr/local/lib/python3.7/http/client.py", line 948, in connect     (self.host,self.port), self.timeout, self.source_address)   File "/usr/local/lib/python3.7/socket.py", line 707, in create_connection     for res in getaddrinfo(host, port, 0, SOCK_STREAM):   File "/usr/local/lib/python3.7/socket.py", line 752, in getaddrinfo     for res in _socket.getaddrinfo(host, port, family, type, proto, flags): socket.gaierror: [Errno -3] Temporary failure in name resolution  During handling of the above exception, another exception occurred:  Traceback (most recent call last):   File "/opt/***/dags/energy.py", line 99, in _url_request_to_pandas     response = urllib.request.urlopen(_request)   File "/usr/local/lib/python3.7/urllib/request.py", line 222, in urlopen     return opener.open(url, data, timeout)   File "/usr/local/lib/python3.7/urllib/request.py", line 525, in open     response = self._open(req, data)   File "/usr/local/lib/python3.7/urllib/request.py", line 543, in _open     '_open', req)   File "/usr/local/lib/python3.7/urllib/request.py", line 503, in _call_chain     result = func(*args)   File "/usr/local/lib/python3.7/urllib/request.py", line 1393, in https_open     context=self._context, check_hostname=self._check_hostname)   File "/usr/local/lib/python3.7/urllib/request.py", line 1352, in do_open     raise URLError(err) urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+[2022-10-26T23:08:17.677+0000] {logging_mixin.py:120} INFO - INFO get_hourly_demand execution:  2022-10-26T22:05:00+00:00
+[2022-10-26T23:08:21.979+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/hourly_demand_dag.py", line 53, in get_hourly_demand
+    raise ValueError()
+ValueError
+[2022-10-26T23:08:22.103+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=get_hourly_demand_v2, task_id=get_hourly_demand, execution_date=20221026T220500, start_date=20221026T230716, end_date=20221026T230822
+[2022-10-26T23:08:22.222+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 27 for task get_hourly_demand (; 2208)
+[2022-10-26T23:08:22.311+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-10-26T23:08:22.386+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

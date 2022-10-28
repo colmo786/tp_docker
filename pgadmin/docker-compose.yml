@@ -1,0 +1,14 @@
+services:
+  pg-admin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@live.com.ar
+      PGADMIN_DEFAULT_PASSWORD: postgres
+    ports:
+      - 5050:80
+    volumes:
+      #- pgadmin-data:/var/lib/pgadmin
+      - ./pgadmin/servers/servers.json:/pgadmin4/servers.json # preconfigured servers/connections
+      - ./pgadmin/servers/pgpass:/pgpass # passwords for the connections in this file

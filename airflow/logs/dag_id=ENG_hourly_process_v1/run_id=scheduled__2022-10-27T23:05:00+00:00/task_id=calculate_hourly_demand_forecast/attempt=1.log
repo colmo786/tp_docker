@@ -1,0 +1,34 @@
+[2022-10-28T19:29:50.111+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T23:05:00+00:00 [queued]>
+[2022-10-28T19:29:50.325+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T23:05:00+00:00 [queued]>
+[2022-10-28T19:29:50.325+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T19:29:50.325+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-10-28T19:29:50.325+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-28T19:29:50.510+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): calculate_hourly_demand_forecast> on 2022-10-27 23:05:00+00:00
+[2022-10-28T19:29:50.546+0000] {standard_task_runner.py:55} INFO - Started process 260 to run task
+[2022-10-28T19:29:50.557+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ENG_hourly_process_v1', 'calculate_hourly_demand_forecast', 'scheduled__2022-10-27T23:05:00+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/ENG_hourly_process_dag.py', '--cfg-path', '/tmp/tmpggna6we8']
+[2022-10-28T19:29:50.584+0000] {standard_task_runner.py:83} INFO - Job 146: Subtask calculate_hourly_demand_forecast
+[2022-10-28T19:29:51.288+0000] {task_command.py:376} INFO - Running <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T23:05:00+00:00 [running]> on host f011703e6eb5
+[2022-10-28T19:29:52.782+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=ENG_hourly_process_v1
+AIRFLOW_CTX_TASK_ID=calculate_hourly_demand_forecast
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-27T23:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-27T23:05:00+00:00
+[2022-10-28T19:29:52.879+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-28T19:29:52.880+0000] {logging_mixin.py:120} INFO - INFO calculate_hourly_demand_forecast execution init:  2022-10-27T23:05:00+00:00
+[2022-10-28T19:29:52.880+0000] {logging_mixin.py:120} INFO - WORKDIR: /opt/***
+[2022-10-28T19:29:53.225+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-28T19:29:53.288+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 1
+[2022-10-28T19:29:53.409+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 49
+[2022-10-28T19:30:20.169+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - ETA: 0s
+[2022-10-28T19:30:20.170+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - 13s 13s/step
+[2022-10-28T19:30:20.212+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast: forecast calculated for next 24 hours. Since: 2022-10-28 16:00
+[2022-10-28T19:30:30.382+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast - 24 records were upserted. Table cammesa_db.hourly_demand_forecast.
+[2022-10-28T19:30:30.385+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-28T19:30:30.442+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=ENG_hourly_process_v1, task_id=calculate_hourly_demand_forecast, execution_date=20221027T230500, start_date=20221028T192950, end_date=20221028T193030
+[2022-10-28T19:30:30.605+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-28T19:30:30.668+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

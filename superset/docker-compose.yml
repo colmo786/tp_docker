@@ -1,0 +1,53 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    container_name: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DATABASE: user
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ../postgres/scripts:/docker-entrypoint-initdb.d
+  
+  pg-admin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@live.com.ar
+      PGADMIN_DEFAULT_PASSWORD: postgres
+    ports:
+      - 5050:80
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+  redis:
+    container_name: redis
+    image: redis
+    restart: always
+
+  superset:
+    container_name: superset
+    image: amancevice/superset
+    restart: always
+    depends_on:
+      - redis
+      - db
+    environment:
+      #MAPBOX_API_KEY: ${MAPBOX_API_KEY}
+      SUPERSET_HOME: /etc/superset
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./conf/superset_config.py:/etc/superset/superset_config.py
+      - .:/var/lib/superset
+
+volumes:
+  postgres-data:
+  superset:
+  pgadmin-data:
