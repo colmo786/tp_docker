@@ -32,3 +32,37 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-27T15:05:00+00:00
 [2022-10-28T19:22:23.527+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=ENG_hourly_process_v1, task_id=calculate_hourly_demand_forecast, execution_date=20221027T150500, start_date=20221028T191944, end_date=20221028T192223
 [2022-10-28T19:22:23.658+0000] {local_task_job.py:164} INFO - Task exited with return code 0
 [2022-10-28T19:22:23.693+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-10-29T00:38:55.508+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T15:05:00+00:00 [queued]>
+[2022-10-29T00:38:55.664+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T15:05:00+00:00 [queued]>
+[2022-10-29T00:38:55.674+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-29T00:38:55.674+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-10-29T00:38:55.675+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-29T00:38:55.807+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): calculate_hourly_demand_forecast> on 2022-10-27 15:05:00+00:00
+[2022-10-29T00:38:55.833+0000] {standard_task_runner.py:55} INFO - Started process 1536 to run task
+[2022-10-29T00:38:55.873+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ENG_hourly_process_v1', 'calculate_hourly_demand_forecast', 'scheduled__2022-10-27T15:05:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/ENG_hourly_process_dag.py', '--cfg-path', '/tmp/tmpjfv1tu7g']
+[2022-10-29T00:38:55.900+0000] {standard_task_runner.py:83} INFO - Job 84: Subtask calculate_hourly_demand_forecast
+[2022-10-29T00:38:56.704+0000] {task_command.py:376} INFO - Running <TaskInstance: ENG_hourly_process_v1.calculate_hourly_demand_forecast scheduled__2022-10-27T15:05:00+00:00 [running]> on host 6800cd8e39a3
+[2022-10-29T00:38:57.064+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=colmo786@gmail.com
+AIRFLOW_CTX_DAG_OWNER=energy
+AIRFLOW_CTX_DAG_ID=ENG_hourly_process_v1
+AIRFLOW_CTX_TASK_ID=calculate_hourly_demand_forecast
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-27T15:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-27T15:05:00+00:00
+[2022-10-29T00:38:57.119+0000] {logging_mixin.py:120} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-10-29T00:38:57.120+0000] {logging_mixin.py:120} INFO - INFO calculate_hourly_demand_forecast execution init:  2022-10-27T15:05:00+00:00
+[2022-10-29T00:38:57.120+0000] {logging_mixin.py:120} INFO - WORKDIR: /opt/***
+[2022-10-29T00:38:57.181+0000] {logging_mixin.py:120} INFO - INFO Module build_postgres_cnxn: DB Connection to host local_pgdb Ok
+[2022-10-29T00:38:57.219+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 1
+[2022-10-29T00:38:57.267+0000] {logging_mixin.py:120} INFO - INFO pg_select_to_pandas: query executed Ok. Number of records returned: 48
+[2022-10-29T00:39:17.589+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - ETA: 0s
+[2022-10-29T00:39:17.591+0000] {logging_mixin.py:120} INFO - 1/1 [==============================] - 7s 7s/step
+[2022-10-29T00:39:17.883+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast: forecast calculated for next 24 hours. Since: 2022-10-28 00:00
+[2022-10-29T00:39:26.758+0000] {logging_mixin.py:120} INFO - INFO _calculate_hourly_demand_forecast - 24 records were upserted. Table cammesa_db.hourly_demand_forecast.
+[2022-10-29T00:39:26.759+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-29T00:39:26.781+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=ENG_hourly_process_v1, task_id=calculate_hourly_demand_forecast, execution_date=20221027T150500, start_date=20221029T003855, end_date=20221029T003926
+[2022-10-29T00:39:26.857+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-29T00:39:26.886+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

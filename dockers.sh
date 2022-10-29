@@ -46,7 +46,7 @@ function start_pgadmin {
   echo "Starting up PGAdmin"
   cd pgadmin
   docker-compose -p pgadmin up -d
-  docker network connect energy_default pgadmin
+  docker network connect energy_default pgadmin4
   cd ..
 }
 
@@ -63,41 +63,25 @@ function stop_pgadmin {
   cd ..
 }
 
-function start_python {
-  echo "Starting up Python to Query Postgres DB"
-  cd python
-  docker-compose --project-name py_to_postgres up -d
-  docker network connect postgres_default py_to_postgres
+function start_jupyter {
+  echo "Starting up Jupyter lab"
+  cd jupyterlab
+  docker-compose - jupyter up -d
+  docker network connect energy_default jupyter
   cd ..
 }
 
-function info_python {
+function info_jupyter {
   echo '
-  Watch logs on Docker Desktop.
+  To access Jupyterlab, please user link with token in logs of container.
   '
 }
 
-function stop_python {
+function stop_jupyter {
   echo "Stopping and removing containers"
-  cd python
-  docker-compose --project-name py_to_postgres down
+  cd jupyterlab
+  docker-compose -p jupyter down
   cd ..
-}
-
-function build_airflow {
-  echo "Building Airflow Image"
-  cd airflow
-  docker build -t airflow/builtin .
-  docker images
-  cd ..
-  echo "Please, check airflow/builtin exists on the docker images list."
-}
-
-function init_airflow {
-  echo "Upgrading DB and creating user airflow - airflow"
-  docker-compose up airflow-init
-  docker-compose down --volumes --remove-orphans
-  echo "If you read 'docker_airflow-init_1 exited with code 0', then you can exec start_all"
 }
 
 function start_airflow {

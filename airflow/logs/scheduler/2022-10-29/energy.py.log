@@ -1,0 +1,694 @@
+[2022-10-29T00:23:11.653+0000] {processor.py:154} INFO - Started process (PID=176) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:23:11.659+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:23:11.661+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:23:11.660+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:23:39.760+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:23:39.777+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 28.128 seconds
+[2022-10-29T00:24:09.977+0000] {processor.py:154} INFO - Started process (PID=239) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:24:09.978+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:24:09.979+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:24:09.979+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:24:13.110+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:24:13.123+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.152 seconds
+[2022-10-29T00:24:43.268+0000] {processor.py:154} INFO - Started process (PID=275) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:24:43.272+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:24:43.274+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:24:43.274+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:24:47.207+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:24:47.237+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.979 seconds
+[2022-10-29T00:31:34.286+0000] {processor.py:154} INFO - Started process (PID=176) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:31:34.290+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:31:34.293+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:31:34.293+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:32:03.181+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:32:03.321+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 29.046 seconds
+[2022-10-29T00:32:34.082+0000] {processor.py:154} INFO - Started process (PID=261) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:32:34.097+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:32:34.098+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:32:34.098+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:33:04.128+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:33:04.127+0000] {timeout.py:68} ERROR - Process timed out, PID: 261
+[2022-10-29T00:33:04.205+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:33:04.129+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 23, in <module>
+    import tensorflow as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/__init__.py", line 37, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/__init__.py", line 42, in <module>
+    from tensorflow.python import data
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/data/__init__.py", line 21, in <module>
+    from tensorflow.python.data import experimental
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/data/experimental/__init__.py", line 126, in <module>
+    from tensorflow.python.data.experimental.ops.parsing_ops import parse_example_dataset
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/data/experimental/ops/parsing_ops.py", line 22, in <module>
+    from tensorflow.python.ops import parsing_ops
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/ops/parsing_ops.py", line 23, in <module>
+    from tensorflow.python.ops import parsing_config
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/ops/parsing_config.py", line 28, in <module>
+    from tensorflow.python.ops.ragged import ragged_math_ops
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/ops/ragged/ragged_math_ops.py", line 29, in <module>
+    from tensorflow.python.ops import map_fn
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/ops/map_fn.py", line 21, in <module>
+    from tensorflow.python.autograph.core import ag_ctx as autograph_ctx
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/autograph/__init__.py", line 33, in <module>
+    from tensorflow.python.autograph import operators
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/autograph/operators/__init__.py", line 36, in <module>
+    from tensorflow.python.autograph.operators.conditional_expressions import if_exp
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/autograph/operators/conditional_expressions.py", line 18, in <module>
+    from tensorflow.python.autograph.operators import control_flow
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/autograph/operators/control_flow.py", line 64, in <module>
+    from tensorflow.python.autograph.operators import py_builtins
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/autograph/operators/py_builtins.py", line 43, in <module>
+    from tensorflow.python.ops import sort_ops
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/ops/sort_ops.py", line 24, in <module>
+    from tensorflow.python.ops import nn_ops
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/ops/nn_ops.py", line 5864, in <module>
+    name=None):
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py", line 1197, in add_dispatch_support
+    return decorator(target)
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py", line 1188, in decorator
+    op_dispatch_handler)
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/util/tf_decorator.py", line 81, in make_decorator
+    decorator_name = inspect.currentframe().f_back.f_code.co_name
+  File "/usr/local/lib/python3.7/inspect.py", line 1509, in currentframe
+    return sys._getframe(1) if hasattr(sys, "_getframe") else None
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 261
+[2022-10-29T00:33:04.208+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:33:04.267+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.237 seconds
+[2022-10-29T00:33:35.333+0000] {processor.py:154} INFO - Started process (PID=346) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:33:35.339+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:33:35.356+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:33:35.356+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:34:05.466+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:34:05.385+0000] {timeout.py:68} ERROR - Process timed out, PID: 346
+[2022-10-29T00:34:05.494+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:34:05.467+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 23, in <module>
+    import tensorflow as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/__init__.py", line 51, in <module>
+    from ._api.v2 import compat
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/__init__.py", line 37, in <module>
+    from . import v1
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v1/__init__.py", line 30, in <module>
+    from . import compat
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v1/compat/__init__.py", line 38, in <module>
+    from . import v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v1/compat/v2/__init__.py", line 28, in <module>
+    from tensorflow._api.v2.compat.v2 import __internal__
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/__init__.py", line 33, in <module>
+    from . import compat
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/compat/__init__.py", line 38, in <module>
+    from . import v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/compat/v2/__init__.py", line 328, in <module>
+    from tensorboard.summary._tf import summary
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/summary/__init__.py", line 22, in <module>
+    from tensorboard.summary import v1  # noqa: F401
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/summary/v1.py", line 23, in <module>
+    from tensorboard.plugins.histogram import summary as _histogram_summary
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/plugins/histogram/summary.py", line 35, in <module>
+    from tensorboard.plugins.histogram import summary_v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/plugins/histogram/summary_v2.py", line 35, in <module>
+    from tensorboard.util import tensor_util
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/util/tensor_util.py", line 20, in <module>
+    from tensorboard.compat.tensorflow_stub import dtypes, compat, tensor_shape
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/__init__.py", line 22, in <module>
+    from .dtypes import as_dtype  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py", line 19, in <module>
+    from . import pywrap_tensorflow
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/pywrap_tensorflow.py", line 22, in <module>
+    from .io import gfile
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/io/__init__.py", line 17, in <module>
+    from . import gfile  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 40, in <module>
+    import fsspec
+  File "/home/airflow/.local/lib/python3.7/site-packages/fsspec/__init__.py", line 65, in <module>
+    process_entries()
+  File "/home/airflow/.local/lib/python3.7/site-packages/fsspec/__init__.py", line 50, in process_entries
+    eps = entry_points()
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 1052, in entry_points
+    return SelectableGroups.load(eps).select(**params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 482, in load
+    ordered = sorted(eps, key=by_group)
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 1050, in <genexpr>
+    dist.entry_points for dist in _unique(distributions())
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/_itertools.py", line 16, in unique_everseen
+    k = key(element)
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/_py39compat.py", line 18, in normalized_name
+    return dist._normalized_name
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 965, in _normalized_name
+    pass_none(Prepared.normalize)(self._name_from_stem(stem))
+  File "/home/airflow/.local/lib/python3.7/site-packages/importlib_metadata/_functools.py", line 99, in pass_none
+    @functools.wraps(func)
+  File "/usr/local/lib/python3.7/functools.py", line 79, in wraps
+    assigned=assigned, updated=updated)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 346
+[2022-10-29T00:34:05.592+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:34:05.845+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.576 seconds
+[2022-10-29T00:34:36.307+0000] {processor.py:154} INFO - Started process (PID=580) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:34:36.329+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:34:36.333+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:34:36.333+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:35:06.352+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:35:06.351+0000] {timeout.py:68} ERROR - Process timed out, PID: 580
+[2022-10-29T00:35:06.355+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:35:06.353+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 23, in <module>
+    import tensorflow as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/__init__.py", line 469, in <module>
+    _keras._load()
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/util/lazy_loader.py", line 41, in _load
+    module = importlib.import_module(self.__name__)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/__init__.py", line 20, in <module>
+    from keras import distribute
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/distribute/__init__.py", line 18, in <module>
+    from keras.distribute import sidecar_evaluator
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/distribute/sidecar_evaluator.py", line 17, in <module>
+    import tensorflow.compat.v2 as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/__init__.py", line 38, in <module>
+    from . import v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/__init__.py", line 48, in <module>
+    from . import math
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 857, in get_code
+  File "<frozen importlib._bootstrap_external>", line 525, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 580
+[2022-10-29T00:35:06.356+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:35:06.513+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.228 seconds
+[2022-10-29T00:35:37.119+0000] {processor.py:154} INFO - Started process (PID=798) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:35:37.136+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:35:37.141+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:35:37.141+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:36:07.170+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:36:07.168+0000] {timeout.py:68} ERROR - Process timed out, PID: 798
+[2022-10-29T00:36:07.210+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:36:07.170+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 24, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/__init__.py", line 82, in <module>
+    from .base import clone
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/base.py", line 17, in <module>
+    from .utils import _IS_32BIT
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/utils/__init__.py", line 28, in <module>
+    from .fixes import np_version, parse_version
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/utils/fixes.py", line 20, in <module>
+    import scipy.stats
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/__init__.py", line 441, in <module>
+    from .stats import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/stats.py", line 37, in <module>
+    from scipy.spatial.distance import cdist
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/spatial/__init__.py", line 102, in <module>
+    from ._geometric_slerp import geometric_slerp
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/spatial/_geometric_slerp.py", line 8, in <module>
+    from scipy.spatial.distance import euclidean
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/spatial/distance.py", line 1676, in <module>
+    @dataclasses.dataclass(frozen=True)
+  File "/usr/local/lib/python3.7/dataclasses.py", line 1002, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash, frozen)
+  File "/usr/local/lib/python3.7/dataclasses.py", line 930, in _process_class
+    _set_new_attribute(cls, '__repr__', _repr_fn(flds, globals))
+  File "/usr/local/lib/python3.7/dataclasses.py", line 739, in _set_new_attribute
+    def _set_new_attribute(cls, name, value):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 798
+[2022-10-29T00:36:07.211+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:36:07.455+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.337 seconds
+[2022-10-29T00:36:38.288+0000] {processor.py:154} INFO - Started process (PID=984) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:36:38.293+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:36:38.306+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:36:38.305+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:37:03.339+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:37:03.403+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 25.118 seconds
+[2022-10-29T00:37:34.119+0000] {processor.py:154} INFO - Started process (PID=1305) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:37:34.142+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:37:34.157+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:37:34.157+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:38:04.226+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:38:04.225+0000] {timeout.py:68} ERROR - Process timed out, PID: 1305
+[2022-10-29T00:38:04.296+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:38:04.227+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 24, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/__init__.py", line 82, in <module>
+    from .base import clone
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/base.py", line 17, in <module>
+    from .utils import _IS_32BIT
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/utils/__init__.py", line 28, in <module>
+    from .fixes import np_version, parse_version
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/utils/fixes.py", line 20, in <module>
+    import scipy.stats
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/__init__.py", line 441, in <module>
+    from .stats import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/stats.py", line 43, in <module>
+    from . import distributions
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/distributions.py", line 8, in <module>
+    from ._distn_infrastructure import (rv_discrete, rv_continuous, rv_frozen)
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/_distn_infrastructure.py", line 24, in <module>
+    from scipy import optimize
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/optimize/__init__.py", line 400, in <module>
+    from .optimize import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/optimize/optimize.py", line 36, in <module>
+    from ._numdiff import approx_derivative
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/optimize/_numdiff.py", line 6, in <module>
+    from scipy.sparse.linalg import LinearOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/sparse/linalg/__init__.py", line 116, in <module>
+    from ._onenormest import *
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 857, in get_code
+  File "<frozen importlib._bootstrap_external>", line 523, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 1305
+[2022-10-29T00:38:04.298+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:38:04.398+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.285 seconds
+[2022-10-29T00:38:35.287+0000] {processor.py:154} INFO - Started process (PID=1425) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:38:35.299+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:38:35.300+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:38:35.300+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:39:05.320+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:39:05.319+0000] {timeout.py:68} ERROR - Process timed out, PID: 1425
+[2022-10-29T00:39:06.076+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:39:05.338+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 24, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/__init__.py", line 82, in <module>
+    from .base import clone
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/base.py", line 17, in <module>
+    from .utils import _IS_32BIT
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/utils/__init__.py", line 28, in <module>
+    from .fixes import np_version, parse_version
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/utils/fixes.py", line 20, in <module>
+    import scipy.stats
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/__init__.py", line 441, in <module>
+    from .stats import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/stats.py", line 43, in <module>
+    from . import distributions
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/distributions.py", line 10, in <module>
+    from . import _continuous_distns
+  File "/home/airflow/.local/lib/python3.7/site-packages/scipy/stats/_continuous_distns.py", line 6773, in <module>
+    class powerlaw_gen(rv_continuous):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 1425
+[2022-10-29T00:39:06.077+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:39:07.759+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 32.471 seconds
+[2022-10-29T00:39:38.212+0000] {processor.py:154} INFO - Started process (PID=1751) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:39:38.214+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:39:38.215+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:39:38.215+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:39:41.929+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:39:41.941+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.733 seconds
+[2022-10-29T00:40:12.685+0000] {processor.py:154} INFO - Started process (PID=1834) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:40:12.706+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:40:12.710+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:40:12.710+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:40:33.913+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:40:33.985+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 21.341 seconds
+[2022-10-29T00:41:04.840+0000] {processor.py:154} INFO - Started process (PID=1916) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:41:04.848+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:41:04.850+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:41:04.850+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:41:34.870+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:41:34.869+0000] {timeout.py:68} ERROR - Process timed out, PID: 1916
+[2022-10-29T00:41:34.946+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:41:34.875+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 23, in <module>
+    import tensorflow as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/__init__.py", line 51, in <module>
+    from ._api.v2 import compat
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/__init__.py", line 37, in <module>
+    from . import v1
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v1/__init__.py", line 30, in <module>
+    from . import compat
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v1/compat/__init__.py", line 38, in <module>
+    from . import v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v1/compat/v2/__init__.py", line 28, in <module>
+    from tensorflow._api.v2.compat.v2 import __internal__
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/__init__.py", line 33, in <module>
+    from . import compat
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/compat/__init__.py", line 38, in <module>
+    from . import v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/_api/v2/compat/v2/compat/v2/__init__.py", line 328, in <module>
+    from tensorboard.summary._tf import summary
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/summary/__init__.py", line 22, in <module>
+    from tensorboard.summary import v1  # noqa: F401
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/summary/v1.py", line 23, in <module>
+    from tensorboard.plugins.histogram import summary as _histogram_summary
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/plugins/histogram/summary.py", line 35, in <module>
+    from tensorboard.plugins.histogram import summary_v2
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/plugins/histogram/summary_v2.py", line 35, in <module>
+    from tensorboard.util import tensor_util
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/util/tensor_util.py", line 20, in <module>
+    from tensorboard.compat.tensorflow_stub import dtypes, compat, tensor_shape
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/__init__.py", line 22, in <module>
+    from .dtypes import as_dtype  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py", line 19, in <module>
+    from . import pywrap_tensorflow
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/pywrap_tensorflow.py", line 22, in <module>
+    from .io import gfile
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/io/__init__.py", line 17, in <module>
+    from . import gfile  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 33, in <module>
+    import boto3
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 18, in <module>
+    from botocore.args import ClientArgsCreator
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/args.py", line 25, in <module>
+    import botocore.serialize
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/serialize.py", line 47, in <module>
+    from botocore import validate
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 152, in __exit__
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 1916
+[2022-10-29T00:41:34.949+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:41:35.096+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.349 seconds
+[2022-10-29T00:42:05.634+0000] {processor.py:154} INFO - Started process (PID=2189) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:42:05.644+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:42:05.645+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:42:05.645+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:42:21.038+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:42:21.173+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 15.545 seconds
+[2022-10-29T00:42:51.706+0000] {processor.py:154} INFO - Started process (PID=2318) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:42:51.728+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:42:51.729+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:42:51.729+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:43:21.781+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:43:21.780+0000] {timeout.py:68} ERROR - Process timed out, PID: 2318
+[2022-10-29T00:43:21.921+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:43:21.784+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 23, in <module>
+    import tensorflow as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/__init__.py", line 469, in <module>
+    _keras._load()
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/util/lazy_loader.py", line 41, in _load
+    module = importlib.import_module(self.__name__)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/__init__.py", line 21, in <module>
+    from keras import models
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/models/__init__.py", line 18, in <module>
+    from keras.engine.functional import Functional
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/engine/functional.py", line 34, in <module>
+    from keras.engine import training as training_lib
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/engine/training.py", line 33, in <module>
+    from keras.engine import compile_utils
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/engine/compile_utils.py", line 24, in <module>
+    from keras import metrics as metrics_mod
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/metrics/__init__.py", line 33, in <module>
+    from keras.metrics.metrics import AUC
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/metrics/metrics.py", line 28, in <module>
+    from keras import activations
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/activations.py", line 21, in <module>
+    import keras.layers.activation as activation_layers
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/layers/__init__.py", line 34, in <module>
+    from keras.layers.attention.additive_attention import AdditiveAttention
+  File "/home/airflow/.local/lib/python3.7/site-packages/keras/layers/attention/__init__.py", line 18, in <module>
+    from keras.layers.attention.additive_attention import AdditiveAttention
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 857, in get_code
+  File "<frozen importlib._bootstrap_external>", line 525, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 2318
+[2022-10-29T00:43:21.923+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:43:22.212+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 30.510 seconds
+[2022-10-29T00:43:53.069+0000] {processor.py:154} INFO - Started process (PID=2443) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:43:53.082+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:43:53.086+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:43:53.086+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:44:25.778+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:44:25.777+0000] {timeout.py:68} ERROR - Process timed out, PID: 2443
+[2022-10-29T00:44:35.370+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:44:25.790+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/energy.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/energy.py", line 23, in <module>
+    import tensorflow as tf
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/__init__.py", line 37, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/__init__.py", line 45, in <module>
+    from tensorflow.python.feature_column import feature_column_lib as feature_column
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/feature_column/feature_column_lib.py", line 18, in <module>
+    from tensorflow.python.feature_column.feature_column import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/feature_column/feature_column.py", line 143, in <module>
+    from tensorflow.python.layers import base
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/layers/base.py", line 16, in <module>
+    from tensorflow.python.keras.legacy_tf_layers import base
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/__init__.py", line 25, in <module>
+    from tensorflow.python.keras import models
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/models.py", line 20, in <module>
+    from tensorflow.python.keras import metrics as metrics_module
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/metrics.py", line 34, in <module>
+    from tensorflow.python.keras import activations
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/activations.py", line 18, in <module>
+    from tensorflow.python.keras.layers import advanced_activations
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/layers/__init__.py", line 22, in <module>
+    from tensorflow.python.keras.engine.input_layer import Input
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/engine/input_layer.py", line 24, in <module>
+    from tensorflow.python.keras.engine import base_layer
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer.py", line 53, in <module>
+    from tensorflow.python.keras.mixed_precision import loss_scale_optimizer
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/mixed_precision/loss_scale_optimizer.py", line 30, in <module>
+    from tensorflow.python.keras.mixed_precision import loss_scale as keras_loss_scale_module
+  File "/home/airflow/.local/lib/python3.7/site-packages/tensorflow/python/keras/mixed_precision/loss_scale.py", line 22, in <module>
+    from tensorflow.python.training.experimental import loss_scale as loss_scale_module
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 857, in get_code
+  File "<frozen importlib._bootstrap_external>", line 525, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/energy.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 2443
+[2022-10-29T00:44:35.372+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:44:40.512+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 47.473 seconds
+[2022-10-29T00:45:23.070+0000] {processor.py:154} INFO - Started process (PID=2771) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:45:23.229+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:45:23.230+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:45:23.230+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:45:37.352+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:45:37.393+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 13.957 seconds
+[2022-10-29T00:45:52.955+0000] {processor.py:154} INFO - Started process (PID=168) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:45:52.956+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:45:52.957+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:45:52.957+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:46:00.602+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:46:00.674+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 8.119 seconds
+[2022-10-29T00:46:31.205+0000] {processor.py:154} INFO - Started process (PID=260) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:46:31.209+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:46:31.220+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:46:31.220+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:46:36.554+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:46:36.594+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 5.430 seconds
+[2022-10-29T00:47:06.837+0000] {processor.py:154} INFO - Started process (PID=305) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:47:06.841+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:47:06.842+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:47:06.842+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:47:13.012+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:47:13.025+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 6.194 seconds
+[2022-10-29T00:47:43.251+0000] {processor.py:154} INFO - Started process (PID=351) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:47:43.252+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:47:43.253+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:47:43.253+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:47:46.440+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:47:46.471+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.223 seconds
+[2022-10-29T00:48:17.472+0000] {processor.py:154} INFO - Started process (PID=397) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:48:17.473+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:48:17.474+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:48:17.474+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:48:21.492+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:48:21.510+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.040 seconds
+[2022-10-29T00:48:52.453+0000] {processor.py:154} INFO - Started process (PID=447) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:48:52.454+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:48:52.455+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:48:52.455+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:48:56.616+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:48:56.629+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.179 seconds
+[2022-10-29T00:49:26.984+0000] {processor.py:154} INFO - Started process (PID=493) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:49:26.987+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:49:26.988+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:49:26.987+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:49:30.052+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:49:30.064+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.086 seconds
+[2022-10-29T00:50:00.194+0000] {processor.py:154} INFO - Started process (PID=527) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:50:00.195+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:50:00.196+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:50:00.196+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:50:04.803+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:50:04.825+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.637 seconds
+[2022-10-29T00:50:35.572+0000] {processor.py:154} INFO - Started process (PID=576) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:50:35.573+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:50:35.574+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:50:35.574+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:50:39.681+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:50:39.702+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.135 seconds
+[2022-10-29T00:51:09.882+0000] {processor.py:154} INFO - Started process (PID=619) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:51:09.882+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:51:09.883+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:51:09.883+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:51:12.950+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:51:12.962+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.083 seconds
+[2022-10-29T00:51:43.183+0000] {processor.py:154} INFO - Started process (PID=665) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:51:43.184+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:51:43.185+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:51:43.185+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:51:46.197+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:51:46.210+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.031 seconds
+[2022-10-29T00:52:16.474+0000] {processor.py:154} INFO - Started process (PID=711) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:52:16.478+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:52:16.479+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:52:16.479+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:52:19.779+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:52:19.795+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.327 seconds
+[2022-10-29T00:52:50.028+0000] {processor.py:154} INFO - Started process (PID=755) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:52:50.032+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:52:50.033+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:52:50.033+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:52:53.465+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:52:53.483+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.461 seconds
+[2022-10-29T00:53:23.801+0000] {processor.py:154} INFO - Started process (PID=799) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:53:23.803+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:53:23.803+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:53:23.803+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:53:27.454+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:53:27.471+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.672 seconds
+[2022-10-29T00:53:58.054+0000] {processor.py:154} INFO - Started process (PID=835) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:53:58.057+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:53:58.058+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:53:58.058+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:54:01.627+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:54:01.643+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.593 seconds
+[2022-10-29T00:54:32.369+0000] {processor.py:154} INFO - Started process (PID=902) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:54:32.378+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:54:32.383+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:54:32.383+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:54:37.097+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:54:37.136+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.774 seconds
+[2022-10-29T00:55:07.620+0000] {processor.py:154} INFO - Started process (PID=956) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:55:07.624+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:55:07.626+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:55:07.625+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:55:11.450+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:55:11.487+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.877 seconds
+[2022-10-29T00:55:42.218+0000] {processor.py:154} INFO - Started process (PID=1002) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:55:42.220+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:55:42.221+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:55:42.221+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:55:45.010+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:55:45.022+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 2.816 seconds
+[2022-10-29T00:56:15.065+0000] {processor.py:154} INFO - Started process (PID=1048) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:56:15.068+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:56:15.069+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:56:15.068+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:56:19.504+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:56:19.544+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.484 seconds
+[2022-10-29T00:56:49.786+0000] {processor.py:154} INFO - Started process (PID=1093) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:56:49.789+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:56:49.790+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:56:49.790+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:56:53.100+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:56:53.112+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.330 seconds
+[2022-10-29T00:57:23.333+0000] {processor.py:154} INFO - Started process (PID=1128) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:57:23.334+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:57:23.336+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:57:23.335+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:57:27.454+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:57:27.471+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.146 seconds
+[2022-10-29T00:57:58.409+0000] {processor.py:154} INFO - Started process (PID=1173) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:57:58.410+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:57:58.411+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:57:58.411+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:58:02.065+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:58:02.078+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.673 seconds
+[2022-10-29T00:58:32.255+0000] {processor.py:154} INFO - Started process (PID=1222) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:58:32.256+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:58:32.257+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:58:32.256+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:58:36.452+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:58:36.486+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.237 seconds
+[2022-10-29T00:59:07.474+0000] {processor.py:154} INFO - Started process (PID=1290) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:59:07.475+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:59:07.476+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:59:07.475+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:59:11.509+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:59:11.523+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 4.053 seconds
+[2022-10-29T00:59:41.788+0000] {processor.py:154} INFO - Started process (PID=1337) to work on /opt/airflow/dags/energy.py
+[2022-10-29T00:59:41.789+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T00:59:41.790+0000] {logging_mixin.py:120} INFO - [2022-10-29T00:59:41.790+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T00:59:44.666+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T00:59:44.681+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 2.897 seconds
+[2022-10-29T01:00:15.444+0000] {processor.py:154} INFO - Started process (PID=1382) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:00:15.447+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:00:15.448+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:00:15.448+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:00:19.057+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:00:19.072+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.632 seconds
+[2022-10-29T01:00:49.927+0000] {processor.py:154} INFO - Started process (PID=1420) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:00:49.930+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:00:49.931+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:00:49.931+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:00:53.509+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:00:53.520+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.597 seconds
+[2022-10-29T01:01:24.225+0000] {processor.py:154} INFO - Started process (PID=1466) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:01:24.229+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:01:24.230+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:01:24.229+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:01:27.340+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:01:27.352+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.131 seconds
+[2022-10-29T01:01:57.592+0000] {processor.py:154} INFO - Started process (PID=1511) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:01:57.595+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:01:57.596+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:01:57.596+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:02:00.575+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:02:00.591+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.003 seconds
+[2022-10-29T01:02:31.513+0000] {processor.py:154} INFO - Started process (PID=1557) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:02:31.514+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:02:31.515+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:02:31.515+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:02:34.286+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:02:34.298+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 2.793 seconds
+[2022-10-29T01:03:04.710+0000] {processor.py:154} INFO - Started process (PID=1603) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:03:04.711+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:03:04.713+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:03:04.712+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:03:07.737+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:03:07.761+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.062 seconds
+[2022-10-29T01:03:38.058+0000] {processor.py:154} INFO - Started process (PID=1646) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:03:38.059+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:03:38.060+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:03:38.060+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:03:41.793+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:03:41.804+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.751 seconds
+[2022-10-29T01:04:12.063+0000] {processor.py:154} INFO - Started process (PID=1684) to work on /opt/airflow/dags/energy.py
+[2022-10-29T01:04:12.067+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/energy.py for tasks to queue
+[2022-10-29T01:04:12.068+0000] {logging_mixin.py:120} INFO - [2022-10-29T01:04:12.068+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/energy.py
+[2022-10-29T01:04:15.305+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/energy.py
+[2022-10-29T01:04:15.318+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/energy.py took 3.266 seconds
