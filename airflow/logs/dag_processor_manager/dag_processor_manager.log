@@ -15928,3 +15928,829 @@ File Path                                    PID    Runtime      # DAGs    # Err
 /opt/airflow/dags/hourly_demand_dag.py                                1           0  4.58s           2022-10-29T01:03:52
 /opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.53s           2022-10-29T01:03:52
 ================================================================================
+[2022-10-29T01:04:38.260+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.30s           2022-10-29T01:04:15
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.06s           2022-10-29T01:04:27
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.10s           2022-10-29T01:04:27
+================================================================================
+[2022-10-29T01:05:09.082+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.99s           2022-10-29T01:04:49
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.66s           2022-10-29T01:05:02
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.71s           2022-10-29T01:05:02
+================================================================================
+[2022-10-29T01:05:39.499+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.72s           2022-10-29T01:05:22
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.21s           2022-10-29T01:05:36
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.21s           2022-10-29T01:05:36
+================================================================================
+[2022-10-29T01:05:54.605+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:05:54.607+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:06:09.770+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.49s           2022-10-29T01:05:57
+/opt/airflow/dags/hourly_demand_dag.py        1841  3.05s             1           0  4.21s           2022-10-29T01:05:36
+/opt/airflow/dags/ENG_hourly_process_dag.py   1839  3.06s             1           0  4.21s           2022-10-29T01:05:36
+================================================================================
+[2022-10-29T01:06:39.871+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.90s           2022-10-29T01:06:30
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.94s           2022-10-29T01:06:11
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  5.00s           2022-10-29T01:06:11
+================================================================================
+[2022-10-29T01:07:10.252+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.54s           2022-10-29T01:07:04
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.27s           2022-10-29T01:06:46
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.30s           2022-10-29T01:06:46
+================================================================================
+[2022-10-29T01:07:40.976+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.91s           2022-10-29T01:07:37
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.64s           2022-10-29T01:07:19
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.66s           2022-10-29T01:07:19
+================================================================================
+[2022-10-29T01:08:11.664+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   2002  3.04s             0           0  2.91s           2022-10-29T01:07:37
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.50s           2022-10-29T01:07:54
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.52s           2022-10-29T01:07:54
+================================================================================
+[2022-10-29T01:08:42.130+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   2047  0.01s             0           0  3.05s           2022-10-29T01:08:11
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.27s           2022-10-29T01:08:29
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.30s           2022-10-29T01:08:29
+================================================================================
+[2022-10-29T01:09:12.289+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.70s           2022-10-29T01:08:44
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.02s           2022-10-29T01:09:03
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.99s           2022-10-29T01:09:03
+================================================================================
+[2022-10-29T01:09:42.423+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.16s           2022-10-29T01:09:18
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.96s           2022-10-29T01:09:37
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.95s           2022-10-29T01:09:37
+================================================================================
+[2022-10-29T01:10:12.671+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.44s           2022-10-29T01:09:51
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.03s           2022-10-29T01:10:11
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.02s           2022-10-29T01:10:11
+================================================================================
+[2022-10-29T01:10:42.915+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.39s           2022-10-29T01:10:26
+/opt/airflow/dags/hourly_demand_dag.py        2204  1.02s             1           0  4.03s           2022-10-29T01:10:11
+/opt/airflow/dags/ENG_hourly_process_dag.py   2201  1.03s             1           0  4.02s           2022-10-29T01:10:11
+================================================================================
+[2022-10-29T01:10:55.522+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:10:55.525+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:11:13.330+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  4.68s           2022-10-29T01:11:01
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.57s           2022-10-29T01:10:45
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.58s           2022-10-29T01:10:45
+================================================================================
+[2022-10-29T01:11:43.613+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.92s           2022-10-29T01:11:34
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  6.91s           2022-10-29T01:11:22
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  6.87s           2022-10-29T01:11:22
+================================================================================
+[2022-10-29T01:12:13.726+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.08s           2022-10-29T01:12:07
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.94s           2022-10-29T01:11:57
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.90s           2022-10-29T01:11:57
+================================================================================
+[2022-10-29T01:12:43.961+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.20s           2022-10-29T01:12:41
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  5.36s           2022-10-29T01:12:33
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  5.37s           2022-10-29T01:12:33
+================================================================================
+[2022-10-29T01:13:14.819+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   2396  3.03s             0           0  3.20s           2022-10-29T01:12:41
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.52s           2022-10-29T01:13:06
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.52s           2022-10-29T01:13:06
+================================================================================
+[2022-10-29T01:13:45.336+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   2441  0.00s             0           0  3.03s           2022-10-29T01:13:14
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.33s           2022-10-29T01:13:41
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.32s           2022-10-29T01:13:41
+================================================================================
+[2022-10-29T01:14:15.359+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.98s           2022-10-29T01:13:48
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.89s           2022-10-29T01:14:15
+/opt/airflow/dags/ENG_hourly_process_dag.py   2476  3.90s             1           0  4.32s           2022-10-29T01:13:41
+================================================================================
+[2022-10-29T01:14:45.588+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.78s           2022-10-29T01:14:22
+/opt/airflow/dags/hourly_demand_dag.py        2516  0.01s             1           0  3.89s           2022-10-29T01:14:15
+/opt/airflow/dags/ENG_hourly_process_dag.py   2513  0.03s             1           0  3.90s           2022-10-29T01:14:15
+================================================================================
+[2022-10-29T01:15:15.969+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.87s           2022-10-29T01:14:55
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.46s           2022-10-29T01:14:50
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.39s           2022-10-29T01:14:49
+================================================================================
+[2022-10-29T01:15:46.206+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.80s           2022-10-29T01:15:29
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.27s           2022-10-29T01:15:24
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.28s           2022-10-29T01:15:24
+================================================================================
+[2022-10-29T01:15:55.683+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:15:55.686+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:16:16.960+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  4.03s           2022-10-29T01:16:03
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.16s           2022-10-29T01:15:58
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.19s           2022-10-29T01:15:58
+================================================================================
+[2022-10-29T01:16:47.305+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.57s           2022-10-29T01:16:38
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.58s           2022-10-29T01:16:32
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.63s           2022-10-29T01:16:32
+================================================================================
+[2022-10-29T01:17:17.472+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.98s           2022-10-29T01:17:11
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.70s           2022-10-29T01:17:06
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.72s           2022-10-29T01:17:06
+================================================================================
+[2022-10-29T01:17:48.353+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.07s           2022-10-29T01:17:45
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.68s           2022-10-29T01:17:40
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.71s           2022-10-29T01:17:40
+================================================================================
+[2022-10-29T01:18:18.673+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   2802  2.95s             0           0  3.07s           2022-10-29T01:17:45
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  5.19s           2022-10-29T01:18:15
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  5.19s           2022-10-29T01:18:15
+================================================================================
+[2022-10-29T01:18:48.737+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  5.85s           2022-10-29T01:18:21
+/opt/airflow/dags/hourly_demand_dag.py        2830  2.79s             1           0  5.19s           2022-10-29T01:18:15
+/opt/airflow/dags/ENG_hourly_process_dag.py   2826  3.03s             1           0  5.19s           2022-10-29T01:18:15
+================================================================================
+[2022-10-29T01:19:19.050+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.56s           2022-10-29T01:18:54
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.47s           2022-10-29T01:18:49
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.60s           2022-10-29T01:18:49
+================================================================================
+[2022-10-29T01:19:49.608+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.33s           2022-10-29T01:19:28
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.63s           2022-10-29T01:19:24
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.85s           2022-10-29T01:19:24
+================================================================================
+[2022-10-29T01:20:20.511+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.19s           2022-10-29T01:20:02
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.64s           2022-10-29T01:19:58
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.73s           2022-10-29T01:19:58
+================================================================================
+[2022-10-29T01:20:50.823+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.10s           2022-10-29T01:20:35
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.08s           2022-10-29T01:20:32
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.12s           2022-10-29T01:20:32
+================================================================================
+[2022-10-29T01:20:55.854+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:20:55.857+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:21:20.946+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.21s           2022-10-29T01:21:10
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.90s           2022-10-29T01:21:06
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.92s           2022-10-29T01:21:06
+================================================================================
+[2022-10-29T01:21:51.272+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.78s           2022-10-29T01:21:43
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.81s           2022-10-29T01:21:40
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.82s           2022-10-29T01:21:40
+================================================================================
+[2022-10-29T01:22:21.900+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.79s           2022-10-29T01:22:19
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.97s           2022-10-29T01:22:15
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.99s           2022-10-29T01:22:15
+================================================================================
+[2022-10-29T01:22:52.824+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   3158  3.02s             0           0  3.79s           2022-10-29T01:22:19
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.77s           2022-10-29T01:22:49
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.81s           2022-10-29T01:22:49
+================================================================================
+[2022-10-29T01:23:23.041+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.40s           2022-10-29T01:22:53
+/opt/airflow/dags/hourly_demand_dag.py        3196  3.02s             1           0  3.77s           2022-10-29T01:22:49
+/opt/airflow/dags/ENG_hourly_process_dag.py   3193  3.03s             1           0  3.81s           2022-10-29T01:22:49
+================================================================================
+[2022-10-29T01:23:53.094+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.92s           2022-10-29T01:23:27
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.99s           2022-10-29T01:23:25
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  5.12s           2022-10-29T01:23:25
+================================================================================
+[2022-10-29T01:24:23.401+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.20s           2022-10-29T01:24:02
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.10s           2022-10-29T01:23:59
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.36s           2022-10-29T01:23:59
+================================================================================
+[2022-10-29T01:24:53.729+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.63s           2022-10-29T01:24:36
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.81s           2022-10-29T01:24:33
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.12s           2022-10-29T01:24:34
+================================================================================
+[2022-10-29T01:25:24.280+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.38s           2022-10-29T01:25:10
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.36s           2022-10-29T01:25:07
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.76s           2022-10-29T01:25:08
+================================================================================
+[2022-10-29T01:25:54.630+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.41s           2022-10-29T01:25:44
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.16s           2022-10-29T01:25:40
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.15s           2022-10-29T01:25:41
+================================================================================
+[2022-10-29T01:25:55.881+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:25:55.883+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:26:24.756+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.72s           2022-10-29T01:26:17
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.40s           2022-10-29T01:26:14
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.72s           2022-10-29T01:26:15
+================================================================================
+[2022-10-29T01:26:55.062+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.11s           2022-10-29T01:26:51
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.11s           2022-10-29T01:26:47
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.14s           2022-10-29T01:26:49
+================================================================================
+[2022-10-29T01:27:25.482+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.23s           2022-10-29T01:27:24
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.19s           2022-10-29T01:27:21
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.61s           2022-10-29T01:27:22
+================================================================================
+[2022-10-29T01:27:55.868+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   3553  0.83s             0           0  3.23s           2022-10-29T01:27:24
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.39s           2022-10-29T01:27:55
+/opt/airflow/dags/ENG_hourly_process_dag.py   3547  2.21s             1           0  3.61s           2022-10-29T01:27:22
+================================================================================
+[2022-10-29T01:28:26.746+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.51s           2022-10-29T01:27:58
+/opt/airflow/dags/hourly_demand_dag.py        3579  1.01s             1           0  3.39s           2022-10-29T01:27:55
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.87s           2022-10-29T01:27:57
+================================================================================
+[2022-10-29T01:28:56.986+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.55s           2022-10-29T01:28:32
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.58s           2022-10-29T01:28:29
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.07s           2022-10-29T01:28:31
+================================================================================
+[2022-10-29T01:29:27.240+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.57s           2022-10-29T01:29:10
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  6.90s           2022-10-29T01:29:06
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  6.45s           2022-10-29T01:29:08
+================================================================================
+[2022-10-29T01:29:57.714+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.99s           2022-10-29T01:29:43
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.57s           2022-10-29T01:29:40
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.00s           2022-10-29T01:29:42
+================================================================================
+[2022-10-29T01:30:28.381+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.67s           2022-10-29T01:30:18
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.84s           2022-10-29T01:30:14
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.47s           2022-10-29T01:30:17
+================================================================================
+[2022-10-29T01:30:56.380+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:30:56.385+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:30:58.415+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.55s           2022-10-29T01:30:52
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.69s           2022-10-29T01:30:49
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.83s           2022-10-29T01:30:51
+================================================================================
+[2022-10-29T01:31:28.630+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.28s           2022-10-29T01:31:26
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.04s           2022-10-29T01:31:22
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.40s           2022-10-29T01:31:24
+================================================================================
+[2022-10-29T01:31:58.696+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   3867  1.67s             0           0  3.28s           2022-10-29T01:31:26
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.24s           2022-10-29T01:31:56
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.65s           2022-10-29T01:31:58
+================================================================================
+[2022-10-29T01:32:28.890+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.98s           2022-10-29T01:32:00
+/opt/airflow/dags/hourly_demand_dag.py        3894  2.70s             1           0  3.24s           2022-10-29T01:31:56
+/opt/airflow/dags/ENG_hourly_process_dag.py   3907  0.00s             1           0  3.65s           2022-10-29T01:31:58
+================================================================================
+[2022-10-29T01:32:59.690+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.89s           2022-10-29T01:32:59
+/opt/airflow/dags/hourly_demand_dag.py        3946  0.01s             1           0  3.29s           2022-10-29T01:32:29
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.76s           2022-10-29T01:32:32
+================================================================================
+[2022-10-29T01:33:30.253+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   4012  0.04s             0           0  2.89s           2022-10-29T01:32:59
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.39s           2022-10-29T01:33:03
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.49s           2022-10-29T01:33:06
+================================================================================
+[2022-10-29T01:34:00.423+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.32s           2022-10-29T01:33:33
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.40s           2022-10-29T01:33:36
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  2.94s           2022-10-29T01:33:39
+================================================================================
+[2022-10-29T01:34:30.587+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.85s           2022-10-29T01:34:06
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  2.75s           2022-10-29T01:34:09
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.26s           2022-10-29T01:34:12
+================================================================================
+[2022-10-29T01:35:00.719+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  5.77s           2022-10-29T01:34:42
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  5.14s           2022-10-29T01:34:44
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.76s           2022-10-29T01:34:46
+================================================================================
+[2022-10-29T01:35:31.222+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.46s           2022-10-29T01:35:16
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.33s           2022-10-29T01:35:19
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.32s           2022-10-29T01:35:21
+================================================================================
+[2022-10-29T01:35:57.250+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:35:57.253+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:36:01.286+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.91s           2022-10-29T01:35:49
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.02s           2022-10-29T01:35:53
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  5.01s           2022-10-29T01:35:56
+================================================================================
+[2022-10-29T01:36:31.655+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.13s           2022-10-29T01:36:22
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.22s           2022-10-29T01:36:27
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.56s           2022-10-29T01:36:29
+================================================================================
+[2022-10-29T01:37:01.789+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.58s           2022-10-29T01:36:56
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.60s           2022-10-29T01:37:01
+/opt/airflow/dags/ENG_hourly_process_dag.py   4285  1.58s             1           0  3.56s           2022-10-29T01:36:29
+================================================================================
+[2022-10-29T01:37:32.249+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.73s           2022-10-29T01:37:29
+/opt/airflow/dags/hourly_demand_dag.py        4326  0.01s             1           0  3.60s           2022-10-29T01:37:01
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.31s           2022-10-29T01:37:03
+================================================================================
+[2022-10-29T01:38:02.282+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   4356  3.03s             0           0  2.73s           2022-10-29T01:37:29
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.86s           2022-10-29T01:37:36
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.70s           2022-10-29T01:37:37
+================================================================================
+[2022-10-29T01:38:32.500+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   4402  0.01s             0           0  3.05s           2022-10-29T01:38:02
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.34s           2022-10-29T01:38:10
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.28s           2022-10-29T01:38:11
+================================================================================
+[2022-10-29T01:39:02.701+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.14s           2022-10-29T01:38:35
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.37s           2022-10-29T01:38:45
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.95s           2022-10-29T01:38:46
+================================================================================
+[2022-10-29T01:39:33.279+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.44s           2022-10-29T01:39:09
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.62s           2022-10-29T01:39:18
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.07s           2022-10-29T01:39:21
+================================================================================
+[2022-10-29T01:40:03.789+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.30s           2022-10-29T01:39:42
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.33s           2022-10-29T01:39:52
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.60s           2022-10-29T01:39:55
+================================================================================
+[2022-10-29T01:40:34.149+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.21s           2022-10-29T01:40:16
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.48s           2022-10-29T01:40:26
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.27s           2022-10-29T01:40:28
+================================================================================
+[2022-10-29T01:40:57.559+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2022-10-29T01:40:57.561+0000] {manager.py:727} INFO - There are 3 files in /opt/airflow/dags
+[2022-10-29T01:41:04.612+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.80s           2022-10-29T01:40:50
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.31s           2022-10-29T01:40:59
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.28s           2022-10-29T01:41:01
+================================================================================
+[2022-10-29T01:41:34.678+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.88s           2022-10-29T01:41:23
+/opt/airflow/dags/hourly_demand_dag.py        4635  4.67s             1           0  3.31s           2022-10-29T01:40:59
+/opt/airflow/dags/ENG_hourly_process_dag.py   4639  2.64s             1           0  3.28s           2022-10-29T01:41:01
+================================================================================
+[2022-10-29T01:42:05.103+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.24s           2022-10-29T01:41:57
+/opt/airflow/dags/hourly_demand_dag.py        4678  0.01s             1           0  4.91s           2022-10-29T01:41:34
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.33s           2022-10-29T01:41:36
+================================================================================
+[2022-10-29T01:42:35.514+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.30s           2022-10-29T01:42:30
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.81s           2022-10-29T01:42:08
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.76s           2022-10-29T01:42:10
+================================================================================
+[2022-10-29T01:43:05.982+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.05s           2022-10-29T01:43:03
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.73s           2022-10-29T01:42:43
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.56s           2022-10-29T01:42:45
+================================================================================
+[2022-10-29T01:43:36.627+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                   4793  2.02s             0           0  3.05s           2022-10-29T01:43:03
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.49s           2022-10-29T01:43:18
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.62s           2022-10-29T01:43:20
+================================================================================
+[2022-10-29T01:44:06.929+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  2.95s           2022-10-29T01:43:37
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.31s           2022-10-29T01:43:51
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.22s           2022-10-29T01:43:53
+================================================================================
+[2022-10-29T01:44:37.125+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.07s           2022-10-29T01:44:11
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  3.61s           2022-10-29T01:44:25
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  3.51s           2022-10-29T01:44:27
+================================================================================
+[2022-10-29T01:45:07.246+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/energy.py                                           0           0  3.01s           2022-10-29T01:44:44
+/opt/airflow/dags/hourly_demand_dag.py                                1           0  4.68s           2022-10-29T01:45:00
+/opt/airflow/dags/ENG_hourly_process_dag.py                           1           0  4.45s           2022-10-29T01:45:02
+================================================================================

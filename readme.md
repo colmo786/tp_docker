@@ -29,21 +29,25 @@ NOTA: Esta imagen se utilizó para desarrollo y pruebas del código luego volcad
 5. Inicializar Airflow con el comando `./dockers.sh init_airflow`. Esta serie de comandos actualizan la DB de airflow y crean el usuario admin/admin para acceder a esa aplicación.
 6. Si el comando anterior terminó con code 0, ejecutar `./docker.sh start_all`. Demora unos minutos.
 En el Docker Desktop deberán quedar 8 containers (de 9) ejecutándose.
-7. Acceder a Airflow en http://localhost:8080/home. Usuario: `airflow` Password: `airflow` <br>
+7. Acceder a Airflow en http://localhost:8080/home.<br>
+Usuario: `airflow` Password: `airflow` <br>
 NOTA: dependiendo de los recursos de la máquina, los dockers pueden demorar en terminar de cargarse y en alguna oportunidad se experimentó que Airflow detecta errores en los DAGs (no encuentra la ubicación de tensorflow, o similar) pero con refresh comienza a funcionar.
 8. Habilitar el DAG ENG_hourly_process_v1. Tiene como fecha de inicio el día posterior al último dato histórico pre cargado en la base de datos. Ejecutará un backfill (cada hora, a los 5 minutos) hasta la hora en que se habilita el DAG.<br>
-![](./docs/images/ENG_airflow_dag.png)
+![](./docs/images/ENG_airflow_dag.png)<br>
+![](./docs/images/ENG_airflow_dag_running.png)
 
 ### Troubleshooting
 Durante el backfill, ee detectaron casos en los que, por falta de recursos, las tareas de los DAGs terminaron con error.
 Para volver a ejecutarlas, seleccionar la barra correspondiente a la ejecución con error y presionar el botón `Clear existing tasks` Esto permitirá que se repita la ejecución.<br>
-![](./docs/images/ENG_airflow_dag_running.png)
-
-## Dashboard Superset
-Los resultados se muestran en un Dashboard creado en Superset. http://localhost:8088/login/
-Usuario: `admin` Password: `admin`<br>
 ![](./docs/images/ENG_dag_re_run_1.png)<br>
 ![](./docs/images/ENG_dag_re_run_2.png)
+
+## Dashboard Superset
+Los resultados se muestran en un Dashboard creado en Superset. http://localhost:8088/login/<br>
+Usuario: `admin` Password: `admin` Dashboard: dashboard_test. <br>
+Presenta la información real de demanda de energía eléctrica total Argentina, publicada por Cammesa, en forma horaria hasta el 26/10/2022 y a partir de esa fecha, publica tanto el dato real como el pronóstico de la siguiente semana.
+NOTA: el presente trabajo no se enfocó en el tunning del modelo de predicción. Se presenta la predicción con una red neuronal LSTM sin tunnear.
+
 
 
 

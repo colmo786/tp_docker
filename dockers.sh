@@ -66,7 +66,7 @@ function stop_pgadmin {
 function start_jupyter {
   echo "Starting up Jupyter lab"
   cd jupyterlab
-  docker-compose - jupyter up -d
+  docker-compose -p jupyter up -d
   docker network connect energy_default jupyter
   cd ..
 }
@@ -161,13 +161,13 @@ case $1 in
   stop_pgadmin
     ;;
 
-  start_python )
-  start_python
-  info_python
+  start_jupyter )
+  start_jupyter
+  info_jupyter
     ;;
 
-  stop_python )
-  stop_python
+  stop_jupyter )
+  stop_jupyter
     ;;
 
   start_airflow )

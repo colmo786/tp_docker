@@ -157,6 +157,8 @@ def _get_hourly_demand(date, database, host, user, password, port, verbose=True)
             if verbose:
                 print(error_txt)
                 cnxn.close()
+        elif df_demand.shape[0]==0:
+            print('INFO get_hourly_demand. No data retrieved from API. Date: ' + date.strftime('%Y-%m-%d %H:%M'))
         else:
             df_demand.fecha = pd.to_datetime(df_demand.fecha.astype(str).str[:19], format='%Y-%m-%d %H:%M:%S')
             df_demand = df_demand[df_demand.fecha.dt.minute==0]

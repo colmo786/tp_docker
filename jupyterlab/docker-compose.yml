@@ -2,6 +2,7 @@ version: '2.1'
 services:
     jupyter:
         image: docker-jupyter-scipy-extensible
+        container_name: jupyter
         build: .
         restart: 'no'
         volumes:
