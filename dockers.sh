@@ -131,11 +131,11 @@ function stop_superset {
   cd ..
 }
 
-
 function token {
   echo 'Your TOKEN for Jupyter Notebook is:'
-  SERVER=$(docker exec -it my_app_jupyter_1 jupyter notebook list)
-  echo "${SERVER}" | grep '/notebook' | sed -E 's/^.*=([a-z0-9]+).*$/\1/'
+  #SERVER=$(docker exec -it jupyter jupyter notebook list)
+  SERVER=$(docker logs jupyter)  
+  echo "${SERVER}" | grep 'ServerApp]  or' | sed -E 's/^.*=([a-z0-9]+).*$/\1/'
 }
 
 case $1 in
