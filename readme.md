@@ -16,3 +16,16 @@ La solución se implementó en una serie de containers, permitiendo portabilidad
 ## Esquema de Containers
 ![](./docs/images/energy_app_dockers.png)
 
+Se incluyen tanto los containers necesarios para la solución en ambiente productivo (color azul de fondo) y los que se utilizaron en la etapa de desarrollo (color gris de fondo)
+
+## Instalación
+La solución requiere tener instalado docker (Engine: 20.10.17) y Compose: 1.29.2. Mínimo 16 Gb de RAM.
+1. Clonar el repo
+2. Posicionarse en la carpeta docker: `cd docker`
+3. Builtear la imagen de Airflow con el comando `./dockers.sh build_airflow.`
+4. Opcional: Builtear la imagen de Jupyterlab con el comando `./dockers.sh build_jupyter`
+5. Inicializar Airflow con el comando `./dockers.sh init_airflow`. Esta serie de comandos actualizan la DB de airflow y crean el usuario admin/admin para acceder a esa aplicación.
+6. Si el comando anterior terminó con code 0, ejecutar `./docker.sh start_all`. Demora unos minutos.
+En el Docker Desktop deberán quedar 8 containers (de 9) ejecutándose.
+7. Acceder a Airflow en http://localhost:8080/home.
+
