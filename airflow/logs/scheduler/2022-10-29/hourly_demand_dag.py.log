@@ -1602,3 +1602,220 @@ Please take a look at these docs to improve your DAG import time:
 [2022-10-29T02:25:58.866+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:25:58.866+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2022-10-29T02:25:58.897+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:25:58.897+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
 [2022-10-29T02:25:58.928+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.889 seconds
+[2022-10-29T02:26:29.229+0000] {processor.py:154} INFO - Started process (PID=8161) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:26:29.230+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:26:29.231+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:26:29.231+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:26:33.678+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:26:33.714+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:26:33.713+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:26:33.741+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:26:33.741+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:26:33.765+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.544 seconds
+[2022-10-29T02:27:03.992+0000] {processor.py:154} INFO - Started process (PID=8206) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:27:04.000+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:27:04.001+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:27:04.000+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:27:07.318+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:27:07.361+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:27:07.360+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:27:07.398+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:27:07.398+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:27:07.433+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.446 seconds
+[2022-10-29T02:27:37.692+0000] {processor.py:154} INFO - Started process (PID=8251) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:27:37.701+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:27:37.702+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:27:37.702+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:27:41.268+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:27:41.302+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:27:41.302+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:27:41.333+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:27:41.333+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:27:41.353+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.666 seconds
+[2022-10-29T02:28:12.311+0000] {processor.py:154} INFO - Started process (PID=8295) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:28:12.318+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:28:12.320+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:28:12.320+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:28:17.809+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:28:17.845+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:28:17.844+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:28:17.874+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:28:17.874+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:28:17.915+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 5.608 seconds
+[2022-10-29T02:28:48.148+0000] {processor.py:154} INFO - Started process (PID=8333) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:28:48.151+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:28:48.154+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:28:48.154+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:28:52.650+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:28:52.708+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:28:52.707+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:28:52.767+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:28:52.767+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:28:52.802+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.657 seconds
+[2022-10-29T02:29:23.055+0000] {processor.py:154} INFO - Started process (PID=8379) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:29:23.058+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:29:23.060+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:29:23.059+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:29:26.556+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:29:26.603+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:29:26.603+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:29:26.642+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:29:26.642+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:29:26.674+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.623 seconds
+[2022-10-29T02:29:57.691+0000] {processor.py:154} INFO - Started process (PID=8426) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:29:57.695+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:29:57.696+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:29:57.696+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:30:00.969+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:30:01.037+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:30:01.036+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:30:01.074+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:30:01.073+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:30:01.103+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.417 seconds
+[2022-10-29T02:30:31.312+0000] {processor.py:154} INFO - Started process (PID=8472) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:30:31.314+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:30:31.316+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:30:31.315+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:30:34.302+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:30:34.340+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:30:34.339+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:30:34.387+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:30:34.387+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:30:34.451+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.145 seconds
+[2022-10-29T02:31:04.573+0000] {processor.py:154} INFO - Started process (PID=8517) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:31:04.578+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:31:04.579+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:31:04.579+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:31:07.915+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:31:07.949+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:31:07.949+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:31:07.979+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:31:07.978+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:31:08.010+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.445 seconds
+[2022-10-29T02:31:38.205+0000] {processor.py:154} INFO - Started process (PID=8563) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:31:38.206+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:31:38.207+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:31:38.207+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:31:41.851+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:31:41.890+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:31:41.890+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:31:41.921+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:31:41.921+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:31:41.947+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.752 seconds
+[2022-10-29T02:32:12.209+0000] {processor.py:154} INFO - Started process (PID=8607) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:32:12.221+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:32:12.222+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:32:12.222+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:32:18.966+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:32:19.000+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:32:18.998+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:32:19.040+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:32:19.040+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:32:19.075+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 6.874 seconds
+[2022-10-29T02:32:49.380+0000] {processor.py:154} INFO - Started process (PID=8644) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:32:49.381+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:32:49.382+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:32:49.382+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:32:53.367+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:32:53.414+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:32:53.413+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:32:53.449+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:32:53.449+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:32:53.476+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.105 seconds
+[2022-10-29T02:33:23.672+0000] {processor.py:154} INFO - Started process (PID=8690) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:33:23.673+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:33:23.674+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:33:23.674+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:33:28.284+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:33:28.433+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:33:28.433+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:33:28.532+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:33:28.531+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:33:28.578+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.912 seconds
+[2022-10-29T02:33:58.839+0000] {processor.py:154} INFO - Started process (PID=8736) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:33:58.849+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:33:58.850+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:33:58.850+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:34:02.761+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:34:02.814+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:34:02.813+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:34:02.856+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:34:02.855+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:34:02.893+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.068 seconds
+[2022-10-29T02:34:33.170+0000] {processor.py:154} INFO - Started process (PID=8782) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:34:33.188+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:34:33.190+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:34:33.190+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:34:37.212+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:34:37.262+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:34:37.262+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:34:37.306+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:34:37.306+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:34:37.348+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.183 seconds
+[2022-10-29T02:35:07.624+0000] {processor.py:154} INFO - Started process (PID=8828) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:35:07.629+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:35:07.631+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:35:07.631+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:35:11.417+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:35:11.473+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:35:11.472+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:35:11.505+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:35:11.505+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:35:11.538+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.919 seconds
+[2022-10-29T02:35:41.787+0000] {processor.py:154} INFO - Started process (PID=8874) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:35:41.790+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:35:41.791+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:35:41.791+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:35:45.367+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:35:45.418+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:35:45.417+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:35:45.456+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:35:45.456+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:35:45.486+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.708 seconds
+[2022-10-29T02:36:15.756+0000] {processor.py:154} INFO - Started process (PID=8920) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:36:15.758+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:36:15.758+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:36:15.758+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:36:19.164+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:36:19.215+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:36:19.214+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:36:19.249+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:36:19.248+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:36:19.283+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.531 seconds
+[2022-10-29T02:36:49.348+0000] {processor.py:154} INFO - Started process (PID=8967) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:36:49.349+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:36:49.350+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:36:49.350+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:36:53.152+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:36:53.197+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:36:53.197+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:36:53.234+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:36:53.234+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:36:53.276+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.933 seconds
+[2022-10-29T02:37:23.586+0000] {processor.py:154} INFO - Started process (PID=9004) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:37:23.600+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:37:23.601+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:37:23.601+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:37:27.715+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:37:27.753+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:37:27.752+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:37:27.785+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:37:27.785+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:37:27.812+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.235 seconds
+[2022-10-29T02:37:58.078+0000] {processor.py:154} INFO - Started process (PID=9052) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:37:58.080+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:37:58.080+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:37:58.080+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:38:02.540+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:38:02.591+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:38:02.590+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:38:02.636+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:38:02.636+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:38:02.665+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.593 seconds
+[2022-10-29T02:38:32.915+0000] {processor.py:154} INFO - Started process (PID=9098) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:38:32.916+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:38:32.917+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:38:32.916+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:38:36.806+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:38:36.850+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:38:36.849+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:38:36.886+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:38:36.886+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:38:36.917+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.007 seconds
+[2022-10-29T02:39:07.173+0000] {processor.py:154} INFO - Started process (PID=9143) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:39:07.178+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:39:07.180+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:39:07.179+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:39:11.087+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:39:11.151+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:39:11.150+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:39:11.196+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:39:11.196+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:39:11.222+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.055 seconds
+[2022-10-29T02:39:41.467+0000] {processor.py:154} INFO - Started process (PID=9191) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:39:41.478+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:39:41.479+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:39:41.479+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:39:45.202+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:39:45.269+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:39:45.264+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:39:45.310+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:39:45.310+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:39:45.337+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.876 seconds
+[2022-10-29T02:40:15.564+0000] {processor.py:154} INFO - Started process (PID=9237) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:40:15.566+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:40:15.567+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:40:15.567+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:40:19.066+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:40:19.110+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:40:19.109+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:40:19.138+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:40:19.138+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:40:19.164+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.603 seconds
+[2022-10-29T02:40:49.329+0000] {processor.py:154} INFO - Started process (PID=9282) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:40:49.337+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:40:49.338+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:40:49.338+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:40:53.247+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:40:53.291+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:40:53.291+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:40:53.327+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:40:53.326+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:40:53.371+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.046 seconds
+[2022-10-29T02:41:23.637+0000] {processor.py:154} INFO - Started process (PID=9318) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:41:23.638+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:41:23.639+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:41:23.639+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:41:30.046+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:41:30.120+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:41:30.119+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:41:30.160+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:41:30.160+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:41:30.193+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 6.557 seconds
+[2022-10-29T02:42:00.509+0000] {processor.py:154} INFO - Started process (PID=9363) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:42:00.517+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:42:00.518+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:42:00.518+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:42:05.663+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:42:05.818+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:42:05.817+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:42:05.897+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:42:05.897+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:42:05.970+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 5.466 seconds
+[2022-10-29T02:42:36.274+0000] {processor.py:154} INFO - Started process (PID=9408) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:42:36.276+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:42:36.277+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:42:36.277+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:42:39.658+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:42:39.742+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:42:39.741+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:42:39.814+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:42:39.814+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:42:39.916+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 3.647 seconds
+[2022-10-29T02:43:10.183+0000] {processor.py:154} INFO - Started process (PID=9454) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:43:10.184+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:43:10.185+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:43:10.185+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:43:14.050+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:43:14.116+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:43:14.115+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:43:14.174+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:43:14.172+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:43:14.235+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.057 seconds
+[2022-10-29T02:43:44.474+0000] {processor.py:154} INFO - Started process (PID=9499) to work on /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:43:44.478+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/hourly_demand_dag.py for tasks to queue
+[2022-10-29T02:43:44.481+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:43:44.481+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:43:48.336+0000] {processor.py:766} INFO - DAG(s) dict_keys(['get_hourly_demand_v2']) retrieved from /opt/airflow/dags/hourly_demand_dag.py
+[2022-10-29T02:43:48.391+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:43:48.391+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-10-29T02:43:48.446+0000] {logging_mixin.py:120} INFO - [2022-10-29T02:43:48.446+0000] {dag.py:3340} INFO - Setting next_dagrun for get_hourly_demand_v2 to 2022-10-26T00:05:00+00:00, run_after=2022-10-26T01:05:00+00:00
+[2022-10-29T02:43:48.483+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/hourly_demand_dag.py took 4.013 seconds

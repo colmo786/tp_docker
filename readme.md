@@ -46,7 +46,7 @@ Para volver a ejecutarlas, seleccionar la barra correspondiente a la ejecución 
 Los resultados se muestran en un Dashboard creado en Superset. http://localhost:8088/login/<br>
 Usuario: `admin` Password: `admin` Dashboard: dashboard_test. <br>
 Presenta la información real de demanda de energía eléctrica total Argentina, publicada por Cammesa, en forma horaria hasta el 26/10/2022 y a partir de esa fecha, publica tanto el dato real como el pronóstico de la siguiente semana.<br>
-NOTA: el presente trabajo no se enfocó en el tunning del modelo de predicción. Se presenta la predicción con una red neuronal LSTM sin tunnear.
+NOTA: el presente trabajo no se enfocó en el tunning del modelo de predicción. Se presenta la predicción con una red neuronal LSTM sin tunnear.<br>
 ![](./docs/images/ENG_dash_1.png)<br>
 ![](./docs/images/ENG_superset_dash.png)
 
@@ -66,8 +66,7 @@ Usuario: user@live.com.ar Password: postgres <br>
 Se accede a la UI en: http://localhost:5050/login <br>
 Para stoppear el docker: `./dockers.sh stop_pgadmin` <br>
 
-
-
+[Documento Entregable del Trabajo Práctico](./docs/TP_OLMO.pdf)
 
 
 
