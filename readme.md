@@ -13,5 +13,7 @@ La solución tiene como tareas macro:
 - Con los datos obtenidos y un modelo pre fiteado, obtener una predicción para las próximas 24 horas.
 - Exponer el histórico y la proyección en un dashboard.
 La solución se implementó en una serie de containers, permitiendo portabilidad de la solución y reducir tiempo de configuración de los entornos de ejecución de cada bloque de la solución. Se desarrolló en una máquina Windows 10 con 16 Gb de ram. Para poder ejecutar Docker se instaló WSL y luego Docker. Como IDE se utilizó VS Code.
+## Esquema de Containers
+!(/docs/images/energy app dockers.png)
 
 
